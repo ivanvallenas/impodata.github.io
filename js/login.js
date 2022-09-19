@@ -18,19 +18,22 @@ button.addEventListener('click', (e) =>{
     sessionStorage.setItem("username",document.getElementById("username").value)
     sessionStorage.setItem("password",document.getElementById("password").value)
     const current_user = sessionStorage.getItem("username")+sessionStorage.getItem("password")
+
+    //Comprobar si los datos ingresados corresponden a los datos de un usuario. Si se cumple la condicion se guarda el link de reporte que le corresponde
+
+    for (let i = 0; i < users_list.length; i++) {
+        if(users_list[i].code==current_user){
+            sessionStorage.setItem("current_user_report_link",users_list[i].link)
+            window.location="reporte.html"            
+            break
+        }else{
+        alert("Usuario o contraseña incorrectos")
+        }
+    }
+    
 })
 
-//Comprobar si los datos ingresados corresponden a los datos de un usuario. Si se cumple la condicion se guarda el link de reporte que le corresponde
    
-for (let i = 0; i < users_list.length; i++) {
-    if(users_list[i].code==current_user){
-        sessionStorage.setItem("current_user_report_link",users_list[i].link)
-        window.location="reporte.html"            
-        break
-    }else{
-    alert("Usuario o contraseña incorrectos")
-    }
-}
 
 
 
