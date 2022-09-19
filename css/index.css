@@ -1,28 +1,78 @@
 *{
     padding: 0;
     margin: 0;
-
 }
 
-h1{
+ul {   
+    padding: 0;
+    width: 60%;
+    overflow:hidden;
+    background-color: rgb(55, 79, 215);
     text-align: center;
-    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+li a {
+    display: inline-block;
     color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
-nav ul {
-    background-color: #757575;
-    width: 100%;
-    list-style-type: none;
+li a:hover {
+    background-color: rgb(3, 79, 29);
+}
+
+#navigation ul
+{
+	font-size: 1.4em;
+}
+
+#navigation ul li
+{
+    display: inline;
+	color:white;
+}
+#navigation li:not(:first-child):before {
+    content: " | ";
+}
+
+
+
+
+
+#logo{
     text-align: center;
 }
-nav li {
-    display: inline-flex;
+
+.secciones{
+    padding-top: 40px;
+    width: 60%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1{
+    color:rgb(55, 79, 215);
+    font-family: 'Roboto', sans-serif
 }
 
-nav a{
-    text-decoration: none;
-    color: red;
-    padding: 10px;
-    width: 150px;
+p{
+    padding-top: 10px;
+    color:black;
+    font-family: 'Roboto', sans-serif
+    font-size: 200px
+}
+
+#video{
+    text-align: center;
+    padding-top: 20px;
+}
+
+#fotos_proyecta{
+    text-align: center;
+    padding-top: 40px;
 }
