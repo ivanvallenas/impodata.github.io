@@ -67,12 +67,23 @@ p{
 
 }
 
-#video{
-    text-align: center;
-    padding-top: 20px;
-}
 
-#fotos_proyecta{
+
+.elementos_centrales{
     text-align: center;
     padding-top: 40px;
+}
+
+
+#boton_wa{
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+#mapa{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 80px;
+
 }
