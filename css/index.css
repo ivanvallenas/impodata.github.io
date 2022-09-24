@@ -29,6 +29,7 @@ li a:hover {
 #navigation ul
 {
 	font-size: 1.4em;
+    border-radius: 30px;
 }
 
 #navigation ul li
@@ -85,5 +86,23 @@ p{
     text-align: center;
     padding-top: 20px;
     padding-bottom: 80px;
+
+}
+
+.botones_reportes{
+    background-color: white;
+    width: 200px;
+    border: 4px solid green;
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px
+    
 
 }

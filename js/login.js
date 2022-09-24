@@ -1,5 +1,6 @@
 const button = document.getElementById("button")
 let users_list = []
+var ingreso_exitoso = 0
 
 //Crear lista de usuarios.Cada uno es un objeto. Se guardan en el array users_list 
 function User (number,code,report,link){
@@ -9,7 +10,7 @@ function User (number,code,report,link){
     this.link=link
 }
 users_list[0] = new User(0,"34567",0,"https://onedrive.live.com/embed?resid=A7412591AA38959E%2135596&authkey=%21AH41iMFULNBdzlg&em=3&wdItem=%22DASHBOARD%22&wdDivId=%22myExcelDiv%22&wdHideGridlines=1")
-users_list[1] = new User(1,"34568",1,"4444")
+users_list[1] = new User(1,"34568",1,"https://onedrive.live.com/embed?resid=A7412591AA38959E%2135600&authkey=%21AJ5GsSmpocivaNY&em=3&wdItem=%22'Reporte%20Tractores'!A1%3AO422%22&wdDivId=%22myExcelDiv%22&wdHideGridlines=1&wdActiveCell=%22'Reporte%20Tractores'!A2%22")
 
 //Detectar uando el usurio hace click en login y guardar el nombre de usuario y contraseña.
 
@@ -24,11 +25,14 @@ button.addEventListener('click', (e) =>{
     for (let i = 0; i < users_list.length; i++) {
         if(users_list[i].code==current_user){
             sessionStorage.setItem("current_user_report_link",users_list[i].link)
+            ingreso_exitoso = 1
             window.location="reporte.html"            
             break
-        }else{
-        alert("Usuario o contraseña incorrectos")
         }
+    }
+    
+    if(ingreso_exitoso==0){
+        alert("polll")
     }
     
 })
