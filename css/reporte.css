@@ -24,6 +24,31 @@
     margin-left: auto;
     margin-right: auto;
     width: 1300px; 
-    height: 8000px;  
+    height: 8236px;  
     overflow-y:hidden 
+
 }
+
+::-webkit-scrollbar{
+    width: 40px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: hsl(120, 26%, 81%);
+    margin-block: .5em;
+    border-radius: 100vw;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(245, 6%, 60%);
+    height: 200px;
+    border-radius: 100vw;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(248, 53%, 44%);
+}
+

@@ -102,7 +102,38 @@ p{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 12px
+    border-radius: 12px;
+  
+    
     
 
+}
+
+.botones_reportes:hover {
+    background: hsl(120, 26%, 81%);
+}
+  
+  
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+
+    background: hsl(120, 26%, 81%);
+    margin-block: .5em;
+    border-radius: 100vw;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(245, 6%, 60%);
+    height: 200px;
+    border-radius: 100vw;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(248, 53%, 44%);
 }
