@@ -16,6 +16,43 @@ function User (number,code,report,link){
     this.code=code
     this.report=report
     this.link=link
+
+    this.num_usuario=num_usuario
+    this.clave=clave
+    this.link_inicial=link_inicial
+    this.r1a=r1a
+    this.r1n=r1n
+    this.r1l=r1l
+    this.r2a=r2a
+    this.r2n=r2n
+    this.r2l=r2l
+    this.r3a=r3a
+    this.r3n=r3n
+    this.r3l=r3l
+    this.r4a=r4a
+    this.r4n=r4n
+    this.r4l=r4l
+    this.r5a=r5a
+    this.r5n=r5n
+    this.r5l=r5l
+    this.r6a=r6a
+    this.r6n=r6n
+    this.r6l=r6l
+    this.r7a=r7a
+    this.r7n=r7n
+    this.r7l=r7l
+    this.r8a=r8a
+    this.r8n=r8n
+    this.r8l=r8l
+    this.r9a=r9a
+    this.r9n=r9n
+    this.r9l=r9l
+    this.r10a=r10a
+    this.r10n=r10n
+    this.r10l=r10l
+
+
+
 }
 
 users_list[0] = new User(0,"856e2468b8b71d2b6aacab75a120e60bbd1f54a7d999437c92ee13b6ed923170",1,"https://onedrive.live.com/embed?resid=FB10EC073F6BB277%21238&authkey=%21ADtrL8JDQb_A62U&em=3&wdItem=%22'Reporte'!A1%3AO422%22&wdDivId=%22myExcelDiv%22&wdHideGridlines=1&wdActiveCell=%22'Reporte'!A400%22")
