@@ -1,4 +1,8 @@
 
+let reports_list = []
+reports_list=JSON.parse(sessionStorage.getItem("current_user_reports_list"))
+
+
 //una funcion para poder insertar un script en el html que incluye link al reporte de manera dinamica
 function load(link){
     var src= document.createElement("script")
@@ -19,21 +23,18 @@ window.addEventListener("load",function(){
 //se crea un script el script con el link del usurio que inicio sesion
 load(sessionStorage.getItem("current_user_report_link"))
 
+//se crea una serie de botones en un div en base a los reportes a los que tiene acceso el cliente, los botones hacen que la pagina se recargue y se muestre el nuevo reporte
 var btncon = document.getElementById("lista_de_reportes")
-var bt=["reporte1","https://onedrive.live.com/embed?resid=FB10EC073F6BB277%21191&authkey=%21AAPqS8eMcnnwP8o&em=3&wdDivId=%22myExcelDiv%22&wdHideGridlines=1&wdHideHeaders=1&wdActiveCell=%22'Hoja1'!H39%22&wdAllowInteractivity=0",
-"reporte2","pollll",
-"reporte3","https://onedrive.live.com/embed?resid=FB10EC073F6BB277%21235&authkey=%21ACCrYePcpBzLH7c&em=3&wdItem=%22'Reporte'!A1%3AO422%22&wdDivId=%22myExcelDiv%22&wdHideGridlines=1&wdActiveCell=%22'Reporte'!A50%22",
-"reporte4","polll"]
-for(let i = 0; i < bt.length; i=i+2){
-    if(bt[i]!="2"){
+var bt=reports_list
+for(let i = 0; i < bt.length; i=i+3){
+    if(bt[i]!="0"){
     var cbt = document.createElement("BUTTON")
-    cbt.innerHTML=bt[i]
+    cbt.innerHTML=bt[i+1]
     cbt.className="botones_reportes"
     cbt.onclick = function(){
-        sessionStorage.setItem("current_user_report_link",bt[i+1])
+        sessionStorage.setItem("current_user_report_link",bt[i+2])
         location.reload()
         window.scrollTo(top)
-
     }
     btncon.appendChild(cbt)
     }
