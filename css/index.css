@@ -183,4 +183,25 @@ p{
     margin-left: 95%;
 }
 
+a.button_wa{
+    background: linear-gradient(to right,#0c9e0d ,#1ca62a);
+    background-color: #0c9e0d;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 19px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 18px 49px;
+    border: 0px solid #000;
+    border-radius: 50px;
+    display: inline-block;
+   }
+   a.button_wa:hover{
+    background: linear-gradient(to right,#1d31b7 ,#406ab3);
+    
+   }
+   a.button_wa:active{
+    transform: scale(0.95);
+   }
 
